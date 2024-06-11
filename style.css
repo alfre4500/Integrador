@@ -24,8 +24,7 @@ header{
     height: 35px;
 }
 nav{
-    gap: 5px;
-    padding: 15px;
+ padding: 20px;
 }
 main{
     height: 65vh;
@@ -34,4 +33,35 @@ footer{
     height: 17.5vh;
     background-color: #111827 ;
     
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+/*main*/
+.titulos{
+    display: flex;
+    padding: 40px;
+
+}
+.parte1{
+    border: 1px solid red;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: justify;
+    padding-right: 20px;
+}
+.parte2{
+    border: 1px solid blue;
+    width: 50%;   
+}
+.img2{
+    object-fit:cover;
+width: 100%;
+height:20rem;
+border-radius: 10px;
 }
