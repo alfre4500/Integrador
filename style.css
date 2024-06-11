@@ -213,6 +213,17 @@ border-radius: 40px;
     border-radius: 2px;
     
 }
+/*parte 3*/
+.parte3{
+    background-color: rgba(128, 128, 128, 0.705);
+    width: 100%;
+    gap: 0.5rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 /*footer*/
 footer{
     display: flex;
