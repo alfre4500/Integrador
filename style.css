@@ -208,6 +208,29 @@ border-radius: 40px;
     flex-direction: column;
 }
 .globo{
+    padding: 3px;
     background-color: rgb(194, 180, 180);
+    border-radius: 2px;
     
+}
+/*footer*/
+footer{
+    display: flex;
+    color: white;
+    padding: 4px;
+}
+.ftcon1{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+.plane1{
+    width: 30px;
+}
+.ftarr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+padding: 4px;
 }
