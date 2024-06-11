@@ -234,3 +234,43 @@ footer{
     gap: 0.5rem;
 padding: 4px;
 }
+/*prueba*/
+.carrusel {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#anterior {
+    left: 0;
+}
+
+#siguiente {
+    right: 0;
+}
+
