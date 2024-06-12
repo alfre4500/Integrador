@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scrollbar-color: #111827 rgb(255, 255, 255);
 }
 .prata-regular {
     font-family: "Prata", serif;
@@ -56,7 +57,7 @@ a{
 }
 a:focus,
 a:hover {
-    color: #ff4655;
+    color: #03c2e4;
 }
 a:focus:after,
 a:hover:after {
@@ -278,9 +279,16 @@ border-radius: 40px;
     max-width: 320px;
     border-radius: 10px;
     box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
-  }
-  
-  .header {
+}
+.card:hover{
+    box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header {
     display: flex;
     align-items: center;
     grid-gap: 1rem;
