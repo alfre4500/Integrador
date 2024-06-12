@@ -1,3 +1,4 @@
+//carrusel//
 document.addEventListener("DOMContentLoaded", function() {
     const anteriorBtn = document.getElementById("anterior");
     const siguienteBtn = document.getElementById("siguiente");
