@@ -23,6 +23,7 @@ header{
 .titulo1{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     gap: 5px;
 }
@@ -81,9 +82,25 @@ a:after {
 
 
 /*main*/
+.clock {
+    margin: 4px;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    width: 20%;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
 .titulos{
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 40px;
+    width: 100%;
+ 
 
 }
 .parte1{
@@ -96,13 +113,16 @@ a:after {
     gap: 1rem;
 
 }
+.botonera1{
+    padding-top: 20px;
+}
 .tx1{
     font-size: 35px;
     letter-spacing: 1px;
     font-family: "Prata", serif;
 }
 .parte2{
-
+object-fit: contain;
     width: 50%;   
 }
 .button1 {
@@ -230,7 +250,7 @@ height:20rem;
 border-radius: 40px;
 }
 /*parte 2*/
-.parte2{
+.parte20{
     width: 100%;
     gap: 0.5rem;
     padding: 10px;

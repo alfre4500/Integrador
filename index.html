@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./multi/icons8-airplane-take-off-50.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>PROYECTO INTEGRADOR</title>
 </head>
 <body>
@@ -21,12 +25,15 @@
         <a href="#">Destinos</a>
         <a href="#">Contactos</a>
     </nav>
+<div class="clock">
+    <div id="time"></div>
+  </div>
     </header>
     <main>
         <div class="titulos">
             <div class="parte1">
-                <h2 class="tx1">Descubre los mejores paquetes turísticos</h2>
-                <p>Encuentra el paquete perfecto para tus próximas vacaciones.</p>
+                <h2 class="tx1 animate__animated animate__fadeInDown">Descubre los mejores paquetes turísticos</h2>
+                <p class="animate__animated animate__fadeInLeft">Encuentra el paquete perfecto para tus próximas vacaciones.</p>
                 <div class="botonera1">
                     <button class="button1">
                         <span class="button_lg">
@@ -41,7 +48,7 @@
             </div>
         </div>
         <hr>
-        <div class="parte2">
+        <div class="parte20">
             <h5 class="globo">Destinos populares</h5>
             <h2 class="tx1">Nuestros Mejores Destinos</h2>
             <p>Explora nuestros destinos turísticos más populares y reserva tus próximas vacaciones.</p>
@@ -51,7 +58,6 @@
                     <h3></h3>
                     <p></p>
                     <div>
-                        <p>$999</p>
                         <button  >Ver mas</button>
                     </div>
                 </div>
@@ -87,7 +93,7 @@
             <p>Escucha las experiencias de nuestros clientes satisfechos</p>
             <div class="tarjetero">
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
                 <div class="header">
                   <div ><img class="image" src="./multi/sonrisa1.jpg" alt=""></div>
                   <div>
@@ -115,7 +121,7 @@
                     San Juan, Argentina, es un destino que combina historia, naturaleza y cultura de manera impresionante. Mi reciente visita a esta provincia me permitió disfrutar de su rica oferta turística en pocos días.
                 </p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in-up">
             <div class="header">
             <div ><img class="image" src="./multi/sonrisa4.jpg" alt=""></div>
             <div>
@@ -143,7 +149,7 @@
                 San Juan, Argentina, es un destino que combina historia, naturaleza y cultura de manera impresionante. Mi reciente visita a esta provincia me permitió disfrutar de su rica oferta turística en pocos días.
             </p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="zoom-in-up">
         <div class="header">
         <div ><img class="image" src="./multi/sonrisa2.jpg" alt=""></div>
         <div>
@@ -171,7 +177,7 @@
             San Juan, Argentina, es un destino que combina historia, naturaleza y cultura de manera impresionante. Mi reciente visita a esta provincia me permitió disfrutar de su rica oferta turística en pocos días.
         </p>
 </div>
-<div class="card">
+<div class="card" data-aos="zoom-in-up">
     <div class="header">
     <div ><img class="image" src="./multi/sonrisa7.jpg" alt=""></div>
     <div>
@@ -199,7 +205,7 @@
         San Juan, Argentina, es un destino que combina historia, naturaleza y cultura de manera impresionante. Mi reciente visita a esta provincia me permitió disfrutar de su rica oferta turística en pocos días.
     </p>
 </div>
-<div class="card">
+<div class="card" data-aos="zoom-in-up">
     <div class="header">
     <div ><img class="image" src="./multi/sonrisa6.jpg" alt=""></div>
     <div>
@@ -220,14 +226,14 @@
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
         </svg>
         </div>
-        <p class="name">Fernando Ortega</p>
+        <p class="name">Diego Ramírez</p>
     </div>
     </div>
     <p class="message">
         San Juan, Argentina, es un destino que combina historia, naturaleza y cultura de manera impresionante. Mi reciente visita a esta provincia me permitió disfrutar de su rica oferta turística en pocos días.
     </p>
 </div>
-<div class="card">
+<div class="card" data-aos="zoom-in-up">
     <div class="header">
     <div ><img class="image" src="./multi/sonrisa5.jpg" alt=""></div>
     <div>
@@ -275,6 +281,10 @@
 <div></div>
 <div></div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
