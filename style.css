@@ -265,6 +265,31 @@ border-radius: 40px;
     border-radius: 2px;
     
 }
+/*parte21*/
+.tarjetas{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.tarjeta{
+    width: 25%;
+    height: 15rem;
+    border: 1px solid black;
+    padding: 5px;
+  background-color: #7d808248;
+  border-radius: 5%;
+  text-align: center;
+}
+.imgtar{
+    object-fit:cover;
+    width: 100%;
+    height: 40%;
+    border-radius: 5%;
+}
 /*parte 3*/
 .parte3{
     background-color: rgba(128, 128, 128, 0.705);
@@ -374,42 +399,3 @@ footer{
 padding: 4px;
 }
 /*prueba*/
-.carrusel {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.tarjetas {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.tarjeta {
-    flex: 0 0 auto;
-    width: 200px;
-    height: 150px;
-    margin-right: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-#anterior {
-    left: 0;
-}
-
-#siguiente {
-    right: 0;
-}
-
