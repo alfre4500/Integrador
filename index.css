@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 body{
- height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
- height: 100vh;
- margin: 0;
- background: url('./multi/pexels-jorge-cachambi-311819836-13558679.jpg') no-repeat center center fixed;
- background-size: cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background: url('./multi/pexels-jorge-cachambi-311819836-13558679.jpg') no-repeat center center fixed;
+background-size: cover;
 }
 main{
     color: white;
@@ -19,4 +19,63 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    gap:1.5 rem;
 }
+h1{
+    text-shadow: 4px 3px 10px rgba(0,0,0,0.6);
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-family: "Prata", serif;
+}
+p{
+    font-family: "Prata", serif;
+    font-size: 40px;
+    text-shadow: 4px 3px 10px rgba(0,0,0,0.6);
+}
+div{display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   a:hover {
+    color: #e8e8e8;
+   }
+   
+   a:hover::before {
+    width: 100%;
+   }
