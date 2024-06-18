@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ventas</title>
+</head>
+<body>
+    <header>
+        <div class="titulo1">
+        <img class="img1" src="./multi/icons8planewhite.png" alt="plane">
+        <h2>Travel escape</h2>
+        </div>
+    <nav>
+        <a href="./vendedor.html">Inicio</a>
+        <a href="./paquetes.html">Paquetes</a>
+        <a href="./destinos.html">Destinos</a>
+    </nav>
+<div class="clock">
+    <div id="time"></div>
+    </div>
+    <a class="aventas" href="./index.html"><img class="salir" src="./multi/icons8-logout-50.png" alt="" srcset=""></a>
+    </header>
+
+    <main class="mainventas">
+        <h2>Registrar Nueva Venta</h2>
+    <form action="/ruta-para-enviar-venta" method="POST">
+        <label for="nombreCliente">Nombre del Cliente:</label>
+        <input type="text" id="nombreCliente" name="nombreCliente" required>
+        
+        <label for="destino">Destino Turístico:</label>
+        <input type="text" id="destino" name="destino" required>
+        
+        <label for="fechaVenta">Fecha de la Venta:</label>
+        <input type="date" id="fechaVenta" name="fechaVenta" required>
+        
+        <label for="precio">Precio del Paquete (en USD):</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+        
+        <div class="buttons">
+            <button type="reset" class="reset-btn">Resetear</button>
+            <button type="submit" class="submit-btn">Enviar</button>
+        </div>
+    </form>
+    </main>
+<footer>
+    <p> &copy; 2024 Travel Escape. Todos los derechos reservados.</p>
+        </footer>
+<script src="./index.js"></script>
+</body>
+</html>

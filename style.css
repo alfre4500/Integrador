@@ -20,12 +20,13 @@ header{
     height: 17.5vh;
     width: 100%;
 }
+
 .titulo1{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    gap: 5px;
+justify-content: center;
+gap: 1rem;
+padding: 20px;
+
 }
 .img1{
     width: 30px;
@@ -34,8 +35,19 @@ header{
 nav{
 padding: 20px;
 }
+.aventas::after{
+display: none;
+}
+.salir{
+    width: 20px;
+    height: 20px;
+}
 
 footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 17.5vh;
     background-color: #111827 ;
     
@@ -65,7 +77,6 @@ a:hover:after {
 width: 100%;
 left: 0%;
 }
-
 a:after {
     content: "";
     pointer-events: none;
@@ -79,9 +90,8 @@ a:after {
     transition-duration: 400ms;
     transition-property: width, left;
 }
-
-
 /*main*/
+
 .clock {
     margin: 4px;
     display: flex;
@@ -202,7 +212,6 @@ object-fit: contain;
     height: 2px;
     background-color: #0f1923;
 }
-
 .button_lg::after {
     content: '';
     display: block;
@@ -340,7 +349,6 @@ border-radius: 40px;
     grid-gap: 1rem;
     gap: 1rem;
 }
-
 .header .image {
     height: 4rem;
     width: 4rem;
@@ -348,7 +356,6 @@ border-radius: 40px;
     object-fit:contain;
 
 }
-
 .stars {
     display: flex;
     justify-content: center;
@@ -356,7 +363,6 @@ border-radius: 40px;
     gap: 0.125rem;
     color: rgba(34, 197, 94, 1);
 }
-
 .stars svg {
     height: 1rem;
     width: 1rem;
@@ -413,20 +419,17 @@ padding: 4px;
     transform-style: preserve-3d;
     transition: transform 0.999s;
   }
-  
-  .card1:hover .card-inner {
+.card1:hover .card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .card-front,
-  .card-back {
+}
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
-  
-  .card-front {
+}
+.card-front {
     color: #fff;
     display: flex;
     align-items: center; 
@@ -434,18 +437,243 @@ padding: 4px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-  }
-  
-  .card-back {
-    background-color: #F08A5D;
+}
+.card-back {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 10px solid #F08A5D;
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-  }
-  
+}
+/*gerente*/
+.maingere{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#vendedorForm{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h2{
+    margin-bottom: 0;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%;
+}
+
+.button-group .reset-button {
+    text-align: center;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.button-group .submit-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+}
+/*ventas*/
+.mainventas{
+gap: 2rem;
+margin-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%;
+}
+
+.button-group .reset-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.button-group .submit-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+}
+/*ventas*/
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input[type="text"], input[type="date"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.submit-btn {
+    background-color: #4CAF50;
+}
+.reset-btn {
+    background-color: #f44336;
+}
+button:hover {
+    opacity: 0.9;
+}
+/*paquetes*/
+.mainpaque{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 15px;
+}
+.paquetera{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.paquete{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.paquete img{
+    width: 100%;
+    height: auto;
+}
+.paquete2{
+    padding: 20px;
+}
+.paquete2 h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+.paquete2 p {
+    margin: 0 0 20px;
+    color: #555;
+}
+.paquete2 a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.paquete2 a:hover {
+    background-color: #45a049;
+}
+#lista{
+
+}
