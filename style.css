@@ -123,9 +123,7 @@ a:after {
     gap: 1rem;
 
 }
-.botonera1{
-    padding-top: 20px;
-}
+
 .tx1{
     font-size: 35px;
     letter-spacing: 1px;
@@ -238,6 +236,9 @@ object-fit: contain;
 
 .button_text {
     position: relative;
+}
+.button1 a{
+    text-decoration: none!important;
 }
 
 .button1:hover {
